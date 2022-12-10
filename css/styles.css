@@ -1,0 +1,61 @@
+/* reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-image: linear-gradient(to top, rgba(160, 131, 131, 0.15), rgba(255, 255, 255, 0)); }
+  header nav div .navbar-brand {
+    transition-property: all;
+    transition-duration: 100ms; }
+    header nav div .navbar-brand:hover {
+      transform: scale(1, 2); }
+    header nav div .navbar-brand div div .nav-link {
+      transition-property: all;
+      transition-duration: 100ms; }
+      header nav div .navbar-brand div div .nav-link:hover {
+        transform: scale(1, 2); }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .videos {
+    margin-left: 100px; }
+  main h1 {
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 17px;
+    margin-top: 20px;
+    grid-area: h1; }
+  main .contactoo {
+    align-items: center; }
+  main img {
+    width: 70%;
+    grid-area: img; }
+  main h2 {
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    border: 4px solid blueviolet;
+    grid-area: h2; }
+  main p {
+    padding: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-area: p; }
+
+footer h3 {
+  color: #808080;
+  font-size: small;
+  text-align: center;
+  margin-top: 50px; }
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "h1 h1 h1  " "img img h2  " "img img p " "h3 h3 h3 "; } }
