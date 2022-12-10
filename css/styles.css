@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+@media screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "h1 h1 h1  " "img img h2  " "img img p " "h3 h3 h3 "; } }
+
 header {
   background-image: linear-gradient(to top, rgba(160, 131, 131, 0.15), rgba(255, 255, 255, 0)); }
   header nav div .navbar-brand {
@@ -21,16 +29,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  main .videos {
-    margin-left: 100px; }
   main h1 {
     color: blueviolet;
     text-align: center;
     margin-bottom: 17px;
     margin-top: 20px;
     grid-area: h1; }
-  main .contactoo {
-    align-items: center; }
   main img {
     width: 70%;
     grid-area: img; }
@@ -39,6 +43,7 @@ main {
     text-align: center;
     font-size: xx-large;
     border: 4px solid blueviolet;
+    margin-top: 20px;
     grid-area: h2; }
   main p {
     padding: 1rem;
@@ -51,11 +56,3 @@ footer h3 {
   font-size: small;
   text-align: center;
   margin-top: 50px; }
-
-@media screen and (min-width: 1024px) {
-  main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-items: center;
-    grid-template-areas: "h1 h1 h1  " "img img h2  " "img img p " "h3 h3 h3 "; } }
