@@ -1,29 +1,28 @@
 // estructuro header
 header{
-    background-image: $color-menu;
-    nav{
-        div{
-            .navbar-brand{
-                transition-property: all;
-                transition-duration: 100ms;
-                &:hover{
-                    transform: scale(1,2);
-                }
-
-                div{
-                    div{
-                        .nav-link{
-                           transition-property: all;
-                           transition-duration: 100ms;
-                            &:hover{
-                            transform: scale(1,2);
-                        }
-                        }
-                    }
+     background-image: $color-menu;
+     transition-property: all ;
+     transition-duration: 100ms ;
+     nav{
+        .navbar-brand{
+            transition-property: all;
+            transition-duration: 100ms;
+            &:hover{
+                transform: scale(1,2);
                 }
             }
+            
+            .container-fluid{
+                        .nav-link{
+                                transition-property: all;
+                                transition-duration: 100ms;
+                                 &:hover{
+                                 transform: scale(1,2);
+                                 }   
+                                }
+                            }
+     
         }
-    }
 
 
       }

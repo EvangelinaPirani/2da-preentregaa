@@ -13,17 +13,19 @@
     grid-template-areas: "h1 h1 h1  " "img img h2  " "img img p " "h3 h3 h3 "; } }
 
 header {
-  background-image: linear-gradient(to top, rgba(160, 131, 131, 0.15), rgba(255, 255, 255, 0)); }
-  header nav div .navbar-brand {
+  background-image: linear-gradient(to top, rgba(160, 131, 131, 0.15), rgba(255, 255, 255, 0));
+  transition-property: all;
+  transition-duration: 100ms; }
+  header nav .navbar-brand {
     transition-property: all;
     transition-duration: 100ms; }
-    header nav div .navbar-brand:hover {
+    header nav .navbar-brand:hover {
       transform: scale(1, 2); }
-    header nav div .navbar-brand div div .nav-link {
-      transition-property: all;
-      transition-duration: 100ms; }
-      header nav div .navbar-brand div div .nav-link:hover {
-        transform: scale(1, 2); }
+  header nav .container-fluid .nav-link {
+    transition-property: all;
+    transition-duration: 100ms; }
+    header nav .container-fluid .nav-link:hover {
+      transform: scale(1, 2); }
 
 main {
   display: flex;
